@@ -122,7 +122,7 @@ page = st.sidebar.selectbox(
 def load_data():
     trips_path = "bike_sample.csv"
     tops_path  = "top_stations.csv"
-    daily_path = "/Users/evancarr/Desktop/daily_trips.csv"
+    daily_path = "daily_trips.csv"
 
     if not all(os.path.exists(p) for p in [trips_path, tops_path, daily_path]):
         st.error("Missing one of: bike_sample.csv, top_stations.csv, daily_trips.csv. Run the notebook step first.")
@@ -266,7 +266,7 @@ elif page == "Recommendations":
 
 
 # run this in the folder that contains your notebook
-get_ipython().system('jupyter nbconvert --to script "2_7_Presenting_Dashboard.ipynb" --output app2')
+# get_ipython().system('jupyter nbconvert --to script "2_7_Presenting_Dashboard.ipynb" --output app2')
 
 
 # In[ ]:
