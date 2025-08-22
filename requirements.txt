@@ -3,4 +3,3 @@ pandas==2.2.2
 plotly==5.22.0
 keplergl==0.3.2
 pyarrow==14   
-
